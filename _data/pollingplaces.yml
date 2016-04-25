@@ -1,0 +1,34 @@
+- precinct: Idaho City Precinct #50
+  location: Boise County Courthouse
+  address: 419 Main Street
+  town: Idaho City, Idaho
+
+- precinct: Placerville Precinct #80
+  location: Centerville Fire Station
+  address: 115 Grimes Pass Rd.
+  town: Centerville, Idaho  83631
+
+- precinct: Mores Creek Precinct #70
+  location: Wilderness Ranch Fire Station
+  address: 7 Wilderness Way
+  town: Boise, Idaho 83716
+
+- precinct: Horseshoe Bend Precinct #40
+  location: Mutual Improvement Club (Formally known as the Ladies’ Auxiliary Building)
+  address: 121 W. Boise St.
+  town: Horseshoe Bend, Idaho
+
+- precinct: Garden Valley Precinct #30
+  location: Crouch Community Hall
+  address: 329 Village Circle
+  town: Garden Valley, Idaho
+
+- precinct: Lowman Precinct #60
+  location: Lowman Emergency Services
+  address: 8000 Hwy 21 - Station #80
+  town: Lowman, Idaho
+
+- precinct: Absentee Voting
+  location: Boise County Recorder’s Office
+  address: 420 Main Street
+  town: Idaho City, Idaho
