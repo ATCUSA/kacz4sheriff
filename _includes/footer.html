@@ -1,25 +1,23 @@
-<footer class="nav navbar-inverse navbar-fixed-bottom ">
-  <div class="row">
-    <div class="container">
-      <div class="col-md-4">
-        <ul class="contact-list">
-          <li><a href="mailto:{{ site.url }}/contact/"><i class="fa fa-3x fa-at"></i> Contact Me.</a></li>
+<footer class="nav navbar-inverse navbar-fixed-bottom container">
+  <div class="container">
+    <div class="col-md-4">
+      <ul class="contact-list list-unstyled">
+        <li><a href="mailto:{{ site.url }}/contact/"><i class="fa fa-3x fa-at"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="social-media-list list-unstyled">
+        {% if site.facebook_page %}
+          <li>
+            <a href="{{ site.facebook_page }}" target="_blank">
+              <i class="fa fa-3x fa-facebook"></i>
+            </a>
+          </li>
+        {% endif %}
         </ul>
       </div>
-      <div class="col-md-4">
-        <ul class="social-media-list">
-          {% if site.facebook_username %}
-            <li>
-              <a href="{{ site.facebook_page }}" target="_blank">
-                <i class="fa fa-3x fa-facebook"></i>
-              </a>
-            </li>
-          {% endif %}
-          </ul>
-        </div>
-      <!-- <div class="col-md-4 text-muted">
-        <p>{{ site.description }}</p>
-      </div> -->
-    </div>
+    <!-- <div class="col-md-4 text-muted">
+      <p>{{ site.description }}</p>
+    </div> -->
   </div>
 </footer>
