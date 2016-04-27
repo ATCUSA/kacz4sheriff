@@ -1,26 +1,16 @@
-<footer class="nav navbar-inverse navbar-fixed-bottom container">
-  <div class="content">
-    <div class="col-md-4">
-      <ul class="contact-list list-unstyled">
-        <li><a href="{{ site.url }}/contact/"><i class="fa fa-3x fa-at"></i></a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 text-muted text-center">
-      <p>
-        &copy; 2016<br />
-        Site designed by Palouse Web
-      </p>
-    </div>
-    <div class="col-md-4 text-right">
-      <ul class="list-unstyled">
-        {% if site.facebook_page %}
-          <li>
-            <a href="{{ site.facebook_page }}" target="_blank">
-              <i class="fa fa-3x fa-facebook"></i>
-            </a>
-          </li>
-        {% endif %}
-      </ul>
-    </div>
+<footer class="navbar navbar-inverse navbar-fixed-bottom container">
+  <div class="pull-left">
+    <a href="{{ site.url }}/contact/">
+      <i class="fa fa-3x fa-at text-left"></i>
+    </a>
+  </div>
+  <div class="pull-right">
+    <a href="{{ site.facebook_page }}" target="_blank">
+      <i class="fa fa-3x fa-facebook text-right"></i>
+    </a>
+  </div>
+  <div class="text-center text-muted">
+    &copy; 2016<br />
+    Site designed by Palouse Web
   </div>
 </footer>
