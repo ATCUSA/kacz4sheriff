@@ -1,12 +1,18 @@
 <footer class="nav navbar-inverse navbar-fixed-bottom container">
-  <div class="container">
+  <div class="content">
     <div class="col-md-4">
       <ul class="contact-list list-unstyled">
-        <li><a href="mailto:{{ site.url }}/contact/"><i class="fa fa-3x fa-at"></i></a></li>
+        <li><a href="{{ site.url }}/contact/"><i class="fa fa-3x fa-at"></i></a></li>
       </ul>
     </div>
-    <div class="col-md-4">
-      <ul class="social-media-list list-unstyled">
+    <div class="col-md-4 text-muted text-center">
+      <p>
+        &copy; 2016<br />
+        Site designed by Palouse Web
+      </p>
+    </div>
+    <div class="col-md-4 text-right">
+      <ul class="list-unstyled">
         {% if site.facebook_page %}
           <li>
             <a href="{{ site.facebook_page }}" target="_blank">
@@ -14,10 +20,7 @@
             </a>
           </li>
         {% endif %}
-        </ul>
-      </div>
-    <!-- <div class="col-md-4 text-muted">
-      <p>{{ site.description }}</p>
-    </div> -->
+      </ul>
+    </div>
   </div>
 </footer>

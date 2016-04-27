@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="home">
-  <div class="container">
+  <div class="row">
     <div class="col-md-3">
       <img src="http://placehold.it/250x300">
     </div>
@@ -26,12 +26,12 @@ layout: default
         <h1> <small>Days Until Elections</small></h1>
         <div id="electionDay"></div>
         <script type="text/javascript">
-          $("#electionDay")
-          .countdown("2016/05/27", function(event) {
-            $(this).text(
-              event.strftime('%D days %H:%M:%S')
-            );
-          });
+        $("#electionDay")
+        .countdown("2016/05/27", function(event) {
+          $(this).text(
+            event.strftime('%D days %H:%M:%S')
+          );
+        });
         </script>
       </div>
       <div class="row">
@@ -39,20 +39,18 @@ layout: default
       </div>
     </div>
   </div>
-  <!-- <h1 class="page-heading">Posts</h1> -->
-
-  <ul class="post-list">
-    {% for post in site.posts %}
+    <!-- <h1 class="page-heading">Posts</h1> -->
+  <div class="row">
+    <ul class="post-list">
+      {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
       </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+      {% endfor %}
+    </ul>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
 </div>
