@@ -20,5 +20,21 @@ facebook_page: https://www.facebook.com/people/Jim-Kaczmarek/100011835361954
 # Where things are.
 include: ['_pages']
 
+assets:
+  prefix: "/assets"
+  sources:
+    -   _assets/css
+    -   _assets/img
+    -   _assets/js
+  compress:
+    css: sass
+    js: uglifier
+  features:
+    automatic_img_alt: true
+    automatic_img_size: false
+
 # Build settings
 markdown: kramdown
+
+# Gems
+gems: [jekyll-assets]
