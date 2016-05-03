@@ -1,0 +1,19 @@
+---
+title: Upcoming Events
+layout: page
+permalink: /events/
+---
+<h1 class="text-muted text-center"><small>For questions, pleae visit the <a href="{{ site.baseurl }}/contact/"> Contact Page</a>.</small></h1>
+{% for event in site.events | sort: 'eventDate' %}
+  {% if event.title %}
+  <div class="text-center">
+    <a href="{{ site.baseurl }}{{ event.url }}">
+      <blockquote>
+        <h4>{{ event.title }}</h4>
+        <h5>{{ event.eventDate }}</h5>
+      </blockquote>
+      <hr />
+    </a><br />
+  </div>
+  {% endif %}
+{% endfor %}

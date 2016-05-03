@@ -7,6 +7,20 @@ permalink: /
   <div class="row">
     <div class="col-md-3">
       <img class="img img-responsive thumbnail" src="https://scontent-lax3-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/13083175_116946215376557_8474910563597887007_n.jpg?oh=81993bb47687955cb6dce875afec05c2&oe=57BFE9D3">
+      <div class="row">
+        <a href="{{ site.baseurl }}/events/"><h3 class="text-center text-muted">Upcoming Events</h3></a>
+        <hr />
+        {% for event in site.events limit:3 | sort: 'eventDate' %}
+          {% if event.title %}
+            <a href="{{ site.baseurl }}{{ event.url }}">
+              <blockquote>
+                {{ event.title }}<br />
+                {{ event.eventDate }}
+              </blockquote>
+            </a><br />
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
     <div class="col-md-6">
       {% include about.html %}
@@ -23,10 +37,6 @@ permalink: /
           <i class="fa fa-3x fa-facebook"></i>
         </a>
         &nbsp;
-        <a href="{{ site.twitter }}" target="_blank">
-          <i class="fa fa-3x fa-twitter"></i>
-        </a>
-        &nbsp;
         <a href="{{ site.baseurl }}/contact/">
           <i class="fa fa-3x fa-at"></i>
         </a>
@@ -38,8 +48,10 @@ permalink: /
       </div>
       <div class="row">
         <h1> <small>Donate</small></h1>
-          <i class="fa fa-3x fa-paypal"></i>
-          <h3><small><a href="{{ site.baseurl }}/donate/">More Info</a></small></h3>
+          <a href="{{ site.baseurl }}/donate/">
+            <i class="fa fa-3x fa-paypal"></i>
+            <h3><small>More Info</small></h3>
+          </a>
       </div>
     </div>
   </div>
